@@ -15,7 +15,9 @@ export default function Navbar() {
   return (
     <nav className={styles.navbar}>
       <h1 className={styles.navTitle}>
-        <NavLink to="/">Xanath</NavLink>
+        <NavLink to="/">
+          <img src="/assets/nombre.PNG" width="180px" />
+        </NavLink>
       </h1>
 
       <button className={styles.navBurguer} onClick={handleClickBurguer}>
@@ -30,7 +32,9 @@ export default function Navbar() {
       >
         {sections.map((section) => (
           <NavLink key={section} to={`/${section.toLowerCase()}`}>
-            <li className={styles.navItem}>{section}</li>
+            <li className={styles.navItem}>
+              <img src={`/assets/${section.toLowerCase()}.PNG`} height="40px" />
+            </li>
           </NavLink>
         ))}
       </ul>

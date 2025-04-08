@@ -2,3 +2,9 @@
   width: 100%;
   height: 100%;
 }
+
+.introduction {
+  padding-top: 100px;
+  text-align: center;
+  font-size: 36px;
+}

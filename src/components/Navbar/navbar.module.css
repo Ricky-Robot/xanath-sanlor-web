@@ -29,7 +29,8 @@
 .navItem {
   padding-left: 3vw;
   padding-right: 3vw;
-  padding-bottom: 0.8vw;
+  padding-bottom: 10px;
+  padding-top: 20px;
   cursor: pointer;
   position: relative;
   user-select: none;
@@ -46,19 +47,21 @@ a {
 
 .navItem::after {
   content: "";
-  height: 3px;
-  width: 0;
-  background: rgba(0, 102, 255, 0.63);
-  border-radius: 50px;
+  height: 50px;
+  width: 100px;
+  background: url("/assets/pincel.PNG") no-repeat center;
+  background-size: contain;
   position: absolute;
   left: 50%;
-  bottom: 0;
-  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+  bottom: -20px;
+  opacity: 0;
+  transform: translateX(-50%) scale(0.8);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .navItem:hover::after {
-  width: 100%;
-  left: 0;
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
 }
 
 @media only screen and (max-width: 768px) {

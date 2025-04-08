@@ -1,0 +1,16 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+.navbarArea {
+  height: 10%;
+  width: 100%;
+}
+
+.contentArea {
+  height: 90%;
+  width: 100%;
+}
