@@ -102,6 +102,8 @@ section {
 }
 body {
   line-height: 1;
+  width: 100vw;
+  height: 100vh;
 }
 ol,
 ul {
@@ -124,5 +126,6 @@ table {
 }
 
 html {
-  background-color: rgb(33, 33, 33);
+  background-color: rgb(255, 243, 219);
+  font-family: "IM Fell English", serif;
 }
